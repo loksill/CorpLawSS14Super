@@ -16,7 +16,7 @@ namespace CorpLawSS14Super
 
         private int parameterSum = 0; // Текущая сумма
         private int parameterToAdd = 0; // Параметр, который будет добавляться
-        private string parameterOther = "Высшие меры:";
+        private string parameterOther = "Высшие меры:"; // Высшие меры
 
         public Form1()
         {
@@ -112,6 +112,18 @@ namespace CorpLawSS14Super
 
             // Обновляем label6
             label6.Text = $"{parameterOther}";
+        }
+
+        private void button7_Click(object sender, EventArgs e) // Очистка
+        {
+            // Обнуляем переменные
+            parameterSum = 0; // Текущая сумма
+            parameterToAdd = 0; // Параметр, который будет добавляться
+            parameterOther = "Высшие меры:"; // Высшие меры
+
+            // Обновляем метки
+            label6.Text = $"{parameterOther}";
+            label2.Text = $"Время: {parameterSum}";
         }
     }
 }

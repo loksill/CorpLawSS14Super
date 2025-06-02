@@ -41,6 +41,7 @@ namespace CorpLawSS14Super
             this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -151,15 +152,26 @@ namespace CorpLawSS14Super
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(469, 490);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 13);
+            this.label6.Size = new System.Drawing.Size(82, 13);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Высшие меры";
+            this.label6.Text = "Высшие меры:";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(55, 446);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(151, 87);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "Очистить";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1058, 596);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
@@ -193,6 +205,7 @@ namespace CorpLawSS14Super
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button7;
     }
 }
 
