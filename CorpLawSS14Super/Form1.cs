@@ -24,17 +24,17 @@ namespace CorpLawSS14Super
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Добавляем сумму
+            // Берём число, которое добавляем
             parameterToAdd += 5;
 
             // Добавляем параметр к сумме
             parameterSum += parameterToAdd;
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
             // Обновляем label2 с новой суммой
-            label2.Text = $"{parameterSum}";
+            label2.Text = $"Текущая сумма: {parameterSum}";
+
+            // Обнуляем значение
+            parameterToAdd = 0;
         }
     }
 }
